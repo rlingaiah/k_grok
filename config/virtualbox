@@ -6,13 +6,13 @@
 # osboxes.org has many
 # http://www.osboxes.org/ubuntu/
 # http://www.osboxes.org/centos/
-# 
+#
 # Username: osboxes
 # Password: osboxes.org
 
 # Extract 7zipped VDI file, move to desired location
 # if your OS doesn't have a 7zip utility installed, you can download one from 7-zip.org
-# 7za e <archive file>, or on Mac OS X, you could double click on the .7z file if using Keka 
+# 7za e <archive file>, or on Mac OS X, you could double click on the .7z file if using Keka
 # (Keka is available for free at https://www.keka.io/en/)
 
 # Immediately following are instructions for the Virtualbox GUI. Command line instructions are at the end.
@@ -38,7 +38,7 @@
 
 # Boot into multi-user (non-graphical mode) by default
 
-# ln -sf /lib/systemd/system/multi-user.target /etc/systemd/system/default.target 
+# ln -sf /lib/systemd/system/multi-user.target /etc/systemd/system/default.target
 
 # If Ubuntu, then:
 # click on Ubuntu button and search for "term" to get the terminal

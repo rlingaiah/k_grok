@@ -67,9 +67,10 @@
 # p7zip -d Ubuntu_16.10_Yakkety-VB-64bit.7z
 
 # Variable Init phase
-export VM_DISK_DIR=${VM_DISK_DIR:-$HOME/vm_disks}
+export VM_DISK_DIR=${VM_DISK_DIR:-$HOME/Downloads/64bit}
 export VDI=${VDI:-"$VM_DISK_DIR/Ubuntu 18.10 Cosmic (64bit).vdi"}
-export VMNAME=${VMNAME:-k_grok}
+read -p "Enter UCSC username" username
+export VMNAME=${VMNAME:-"cmps107-"${username}}
 # determine your host's primary network adapter ...
 # this may work on Linux
 export HOST_ADAPTER=${HOST_ADAPTER:-$(ip link show up | grep "<BROAD" | cut -f2 -d":")}
